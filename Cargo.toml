@@ -1,0 +1,23 @@
+[package]
+name = "boost_redis"
+description = "Boost C++ library boost_redis packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_redis"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_redis"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_asio = { version = "0.1.0", path = "../boost_asio" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+boost_system = { version = "0.1.0", path = "../boost_system" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
